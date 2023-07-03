@@ -1,0 +1,133 @@
+.contact__me{
+    width: min(100% - 8rem);
+    margin-inline:auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:4rem
+}
+.contact__me__leftpart{
+    flex:35%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.contact__me__leftpart h2{
+    color:rgb(84, 156, 245);
+}
+.contact__me__leftpart h1{
+    color: rgb(186, 74, 228);
+}
+.contact__me__leftpart p{
+    padding: 1rem 0;
+    color:rgb(138, 143, 158);
+    font-weight: 400;
+    font-size: large;
+}
+.contact__me__rightpart{
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 15px gainsboro, -10px -10px 15px white;
+
+    width: 100%;
+    padding:2rem 1.7rem;
+    gap:1.5rem;
+
+}
+.contact__me__leftpart button{
+        width: 230px;
+        height: auto;
+        outline:none;
+        border:none;
+        padding:1.6rem 1.9rem;
+        background-color: transparent;
+        color:rgb(186, 74, 228);
+        font-weight: 700;
+        font-size: large;
+        box-shadow: 10px 10px 15px gainsboro, -10px -10px 15px white;
+        border-radius: 10px;
+}
+
+.contact__me__rightpart .col-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:3rem
+}
+.col-1 .roffer, .salary{
+    flex:50%
+}
+.contact__me__rightpart .col-1 .roffer, .salary, .email, .company, .address{
+    padding:1rem 1.5rem;
+    box-shadow: inset 5px 5px 8px rgb(194, 194, 194), inset -6px -6px 15px white;
+    border-radius: 2rem;
+    border:none;
+    outline: none;
+    width: 100%;
+    color:rgb(186, 74, 228);
+    font-weight: 700;
+    font-size: medium;
+}
+.contact__me__rightpart span{
+    color: rgb(84, 156, 245)
+}
+
+.address{
+    height: 100px;
+    border-radius: 1rem;
+}
+.contact__me__btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.contact__me__btn button{
+    width: 30%;
+    padding: 1rem 1.5rem;
+    color:white;
+    background-color: rgb(186, 74, 228);
+    cursor: pointer;
+    float: left;
+    border:none;
+    outline:none;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: large;
+    box-shadow: 10px 10px 15px gainsboro, -10px -10px 15px white;
+
+}
+@media screen and (max-width: 1200px){
+    .contact__me{ 
+        width: min(100% - 2rem);
+        margin-inline:auto;       
+    }
+}
+@media screen and (max-width: 970px){
+    .contact__me{
+        display: flex;
+        gap:3rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+ 
+}
+@media screen and (max-width: 595px){
+    .contact__me__leftpart p{
+        width: 100%;
+        font-size: medium;
+    }
+    .contact__me__btn button{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 480px){
+    .contact__me__btn button{
+        width: 60%;
+    }
+}
+

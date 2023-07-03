@@ -1,0 +1,108 @@
+.mywork{
+    width: min(100% - 8rem);
+    margin-inline:auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.mywork__items{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem 0;
+
+}
+.mywork__items h1{
+    color:rgb(186, 74, 228);
+    font-size: 32px;
+}
+.mywork__items p{
+    color:rgb(138, 143, 158);
+    font-size: large;
+    font-weight: 400;
+}
+
+.our__work__process{
+    flex: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap:2rem
+}
+.discover, .define, .ideate, .design, .impliment{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+}
+.first-layer{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(gainsboro, white);
+    box-shadow: 10px 10px 15px gainsboro, -10px -10px 15px white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.second-layer{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: inset 6px 6px 15px white, inset -7px -7px 15px gainsboro ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+@media screen and (max-width: 1200px){
+    .mywork{ 
+        width: min(100% - 2rem);
+        margin-inline:auto;       
+    }
+}
+@media screen and (max-width: 850px){
+    .mywork{
+        display: flex;
+        gap:1rem;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+    .mywork__items p{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 576px){
+    .mywork__items p{
+        width: 100%;
+        font-size: medium;
+    }
+    .our__work__process{
+        gap:0.5rem
+    }
+    .our__work__process h3{
+        font-size: medium;
+    }
+
+}
+@media screen and (max-width: 473px){
+    .first-layer{
+        width: 60px;
+        height: 60px;
+    }
+    .second-layer{
+        width: 35px;
+        height: 35px;
+    }
+    .discover, .define, .ideate, .design, .impliment{
+        gap: 0.5rem;
+    }
+    .our__work__process h3{
+        font-size: small;
+    }
+}
