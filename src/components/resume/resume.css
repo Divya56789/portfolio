@@ -1,0 +1,18 @@
+.resume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    padding:1.7rem 1.9rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px gainsboro, -10px -10px 15px white;
+}
+.resume button{
+    border:none;
+    outline:none;
+    color: rgb(66, 146, 244);
+    font-size: 20px;
+    font-weight: 700;
+}

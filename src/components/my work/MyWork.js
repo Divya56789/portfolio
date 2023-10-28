@@ -1,11 +1,11 @@
 import React from 'react';
-import download from '../../assets/download.svg';
 import discover from '../../assets/brain.svg';
 import define from '../../assets/define.svg';
 import design from '../../assets/design.svg';
 import develop from '../../assets/develop.svg';
 import deploy from '../../assets/deploy.svg';
 import './mywork.css';
+import Resume from '../resume/Resume';
 
 
 function MyWork({sectionRef2}) {
@@ -14,10 +14,7 @@ function MyWork({sectionRef2}) {
       <div className="mywork__items">
         <h1>Our Work Process</h1>
         <p>As a ReactJS developer, my work process revolves around five key stages: discover, define, design, develop, and deploy. Each stage plays a vital role in delivering high-quality and impactful web applications.</p>
-        <div className="resume">
-          <button>Download CV</button>
-          <img src={download} alt="download" />
-        </div>
+        <Resume/>
 
       </div>
 
